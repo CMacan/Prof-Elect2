@@ -1,1 +1,85 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
 
+.hero-section {
+    position: relative;
+    height: 1241px;
+    padding-top: 65px;
+    background-image: url('images/homepage/DemonSlayerHero.jpg');
+    background-position: 65% 50%;
+    background-size: auto;
+    background-repeat: no-repeat;
+}
+
+body {
+    margin: 0;
+    min-height: 100%;
+    background-color: #010000;
+    font-family: 'Futura font',sans-serif;
+    color: #333;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 900;
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 930px;
+}
+
+.top-navbar {
+    z-index: 100;
+    background-color: transparent;  
+    position: relative;
+    background: #ddd;  
+}
+
+.wrap-navbar {
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    align-items: center;
+}
+
+.overlay_blending_top_hero.overlay_top_hero_3 {
+    z-index: 2;
+    height: 340px;
+}
+
+.overlay_blending_top_hero {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: auto;
+    background-image: linear-gradient(180deg,#010000,transparent);
+    mix-blend-mode: soft-light;
+}
+
+.overlay_blending_bottom_hero_3 {
+    height: 340px;
+}
+
+.overlay_blending_bottom_hero {
+    position: absolute;
+    left: 0;
+    top: auto;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+    background-image: linear-gradient(180deg,transparent,#010000);
+    mix-blend-mode: soft-light;
+}
+
+.logo {
+    position: relative;
+    float: left;
+    text-decoration: none;
+    color: #333;
+    margin-right: 25px;
+}
