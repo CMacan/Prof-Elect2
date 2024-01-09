@@ -9,18 +9,61 @@
     </head>
     <body>
         <div class="hero-section">
-            <div class = "container">
-                <div class = "top-navbar">
-                    <div class = "container">
-                        <img class="logo" src="images/homepage/Logo.svg">
+            <div class="container">
+                <div class="top-navbar">
+                    <div class="container">
+                        <div class="wrap-navbar">
+                            <img class="logo" src="images/homepage/Logo.svg">
+                            <button class="button">
+                                <span class="button_lg">
+                                    <span class="button_sl"></span>
+                                    <span class="button_text">KNOW CHARACTERS</span>
+                                </span>
+                            </button>
+                        </div>                                                  
+                    </div>
+                </div>
+                <div class="home-content">
+                    <button class="btn" onclick="playFullscreenVideo()">
+                        Watch
+                    </button>    
+                    <h1 class="header-1">Welcome!</h1>
+                    <p class="paragraph-intro">
+                        Explore 'SlayerSeeker Hub,' your ultimate guide to all things Demon Slayer. 
+                        From character profiles to episode guides and fan-created content, this 
+                        user-friendly platform enriches your experience. Stay updated on the latest 
+                        releases, connecting you to a shared adventure in the mesmerizing world of Demon 
+                        Slayer!
+                    </p>
+                    <div class="spoiler-alert">
+                        SPOILER ALERT: THIS WEBSITE MAY CONTAIN SPOILER CONTENT
                     </div>
                 </div>
             </div>
             <div class="overlay_blending_top_hero overlay_top_hero_3"></div>
-            <div class = "overlay_blending_top_hero overlay_top_hero_2"></div>
+            <div class="overlay_blending_top_hero overlay_top_hero_2"></div>
             <div class="overlay_blending_top_hero"></div>
             <div class="overlay_blending_bottom_hero overlay_blending_bottom_hero_3"></div>
             <div class="overlay_blending_bottom_hero overlay_blending_bottom_hero_2"></div>
             <div class="overlay_blending_bottom_hero"></div>
+        </div>
+        <section class="character-section">
+
+        </section>
+        <div class="footer">
+            <div class="footer-content">
+                <p>©2024 SlayerSeeker Hub.</p>
+            </div>
+        </div>
+        <script>
+            function playFullscreenVideo() {
+                // Extract the video ID from the YouTube link
+                var youtubeLink = 'https://www.youtube.com/watch?v=VQGCKyvzIM4&ab_channel=AniplexUSA';
+                var videoId = youtubeLink.split('v=')[1].split('&')[0];
+        
+                // Open a new window with the YouTube video in fullscreen
+                window.open('https://www.youtube.com/embed/' + videoId + '?autoplay=1&controls=0&showinfo=0&autohide=1', '_blank', 'fullscreen=yes');
+            }
+        </script>
     </body>
 </html>
